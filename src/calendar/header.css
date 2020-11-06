@@ -1,0 +1,41 @@
+.head {
+    margin-top: 9vw;
+  }
+  
+  .head div.header .headerName {
+    margin: 6px;
+    width: 400px;
+    font-weight: bold;
+  }
+  
+/* PAGINATION */
+  .head div.header {
+    display: flex;
+    text-align: center;
+    color: white;
+    min-height: 2rem;
+    line-height: 2rem;
+    justify-content: center;
+    font-family: "Merriweather Sans", sans-serif;
+    font-size: 30px;
+  }
+  
+  .head div.header .prevPagination {
+    padding: 0 10px 0 10px;
+    margin: 6px;
+  }
+  
+  .head div.header .nextPagination {
+    padding: 0 10px 0 10px;
+    margin: 6px;
+  }
+  
+  .head div.header .prevPagination:hover {
+    cursor: pointer;
+    color: #363838;
+  }
+  
+  .head div.header .nextPagination:hover {
+    cursor: pointer;
+    color: #363838;
+  }

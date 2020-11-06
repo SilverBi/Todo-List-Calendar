@@ -1,0 +1,57 @@
+.calendar .body {
+  margin-top: 2em;
+}
+
+.calendar .day {
+  position: relative;
+  display: inline-block;
+  width: calc(600px / 7);
+  height: 70px;
+  background-color: whitesmoke;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: "Merriweather Sans", sans-serif;
+  padding: 0;
+}
+
+.calendar .day div {
+  position: relative;
+  color: black;
+  line-height: 70px;
+}
+
+.calendar .day div.before {
+  color: grey;
+}
+
+.calendar .day div.selected {
+  background-color: #de2323;
+  color: white;
+  font-weight: bold;
+}
+
+.calendar .day:hover {
+  cursor: pointer;
+}
+
+.body .day-names div.week {
+  position: relative;
+  display: inline-block;
+  width: calc(600px / 7);
+  height: 44px;
+  background-color: whitesmoke;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 40px;
+  margin: 0 0 4px 0;
+  padding: 0;
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+.body .day-names div:first-child {
+  color: #e33434;
+}
+
+.body .day-names div:last-child {
+  color: #0069cc;
+}

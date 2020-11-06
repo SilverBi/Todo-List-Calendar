@@ -1,70 +1,27 @@
-# Getting Started with Create React App
+<h1>To Do List</h1>
+<p>2020 calendar + to do list</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+제공한 gif 파일을 참조하여 캘린더와 투두리스트를 만드시면 됩니다.
+디자인은 gif과 똑같지 않아도 됩니다.
 
-## Available Scripts
+캘린더에는 이하의 요소가 포함되어야 합니다:
 
-In the project directory, you can run:
+년도 (2020년으로 고정)
+선택한 달
+1월을 초기값으로 설정
+다음달 또는 이전달로 이동하는 화살표 버튼 2개 (1월이거나 12월이면 왼쪽 또는 오른쪽 버튼 비활성화)
+달력
+날짜를 선택하면 칸 색이 바뀜
+투두리스트에는 이하의 요소가 포함되어야 합니다:
 
-### `yarn start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+선택한 날짜의 일과 요일
+할 일 목록
+각 목록에는 시간, 할 일 제목, 수정 버튼과 삭제 버튼이 있음
+수정 버튼을 누르면 시간과 할 일 제목을 수정하는 폼을 띄움
+삭제 버튼을 누르면 삭제
+아래쪽에는 추가 버튼과 모두 삭제 버튼이 존재
+추가 버튼을 누르면 시간과 할 일 제목을 추가하는 폼을 띄움
+모두 삭제를 누르면 추가했던 모든 할 일을 삭제함
+초기에는 선택한 날짜가 없으므로, 일과 요일을 띄우지 않고 추가 버튼과 모두 삭제 버튼을 비활성화
+시간 추가 및 수정시에는 24시간 형식의(00:00~23:59) HH:MM 형식만 입력 가능하도록 유효성을 체크하세요.
+redux를 이용하여 선택한 일자 및 할 일 목록을 관리하세요.
