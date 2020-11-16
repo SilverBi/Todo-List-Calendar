@@ -1,0 +1,123 @@
+div.weekHead {
+  position: absolute;
+  display: inline-block;
+  left: 77.5%;
+  transform: translate(-50%);
+  margin-top: 10vh;
+  color: #199c81;
+  font-size: 80px;
+  font-weight: bold;
+  font-family: "Merriweather Sans", sans-serif;
+  text-align: center;
+}
+
+div.dateHead {
+  position: absolute;
+  display: inline-block;
+  left: 77.5%;
+  transform: translate(-50%);
+  top: 20vh;
+  color: #69c9b9;
+  font-size: 170px;
+  font-weight: bold;
+  font-family: "Merriweather Sans", sans-serif;
+  text-align: center;
+}
+
+.todoInput {
+  position: relative;
+}
+
+.buttons {
+  position: relative;
+}
+
+.addButton {
+  position: absolute;
+  display: inline-block;
+  top: 45vh;
+  left: 44%;
+  transform: translate(-50%);
+  font-family: "Merriweather Sans", sans-serif;
+  font-size:20px;
+  font-weight: bold;
+  border:none;
+  border-radius: 10px;
+  background-color: whitesmoke;
+  color: #29403c;
+  padding: 7px 15px 7px 15px;
+  cursor: pointer;
+}
+
+.clearAllButton {
+  position: absolute;
+  display: inline-block;
+  top: 45vh;
+  left: 56%;
+  transform: translate(-50%);
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: bold;
+  font-size:20px;
+  border:none;
+  border-radius: 10px;
+  background-color: whitesmoke;
+  color: #29403c;
+  padding: 7px 15px 7px 15px;
+  cursor: pointer;
+}
+
+.noneButton {
+  visibility: hidden;
+}
+
+div.addForm {
+  position: static;
+  display: block;
+  text-align: center;
+  background-color: #000000;
+  color:whitesmoke;
+  opacity: 0.8;
+  padding: 20px;
+  border-radius: 10px;
+  width:400px;
+  height: 150px;
+}
+
+div.addFormHeader {
+  display: block;
+  position : static;
+  font-family: 'Noto Sans KR', sans-serif;
+  margin-bottom:20px;
+}
+
+label.inputTime {
+  display: block;
+  position : static;
+  font-family: 'Noto Sans KR', sans-serif;
+  margin:7px;
+}
+
+label.inputWork {
+  display: block;
+  position : static;
+  font-family: 'Noto Sans KR', sans-serif;
+  margin:7px;
+}
+
+button.addUpdateButton {
+  display: block;
+  position : static;
+  font-family: 'Noto Sans KR', sans-serif;
+  margin-top:20px;
+  margin-left:50%;
+  transform: translate(-50%);
+}
+
+div.todoDate {
+  display: block;
+  position: absolute;
+  top : 55vh;
+  left: 77.5%;
+  transform: translate(-50%);
+}
+

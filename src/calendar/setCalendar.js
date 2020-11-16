@@ -1,10 +1,9 @@
-export default function setCalendar(value) {
+export default function setCalendar(selectedDate) {
+    let startDay = selectedDate.clone().startOf("month").startOf("week");
+    let endDay = selectedDate.clone().endOf("month").endOf("week");
+    let day = startDay.clone().subtract(1, "day");
 
-    const startDay = value.clone().startOf("month").startOf("week");
-    const endDay = value.clone().endOf("month").endOf("week");
-    const day = startDay.clone().subtract(1, "day");
-
-    const calendar= [];
+    let calendar = [];
 
     while(day.isBefore(endDay, "day")) {
         calendar.push(
@@ -13,6 +12,5 @@ export default function setCalendar(value) {
                 .map(() => day.add(1,"day").clone())
         );
     }
-
     return calendar;
 }

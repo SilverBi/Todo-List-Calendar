@@ -1,0 +1,82 @@
+button.editButton {
+    position: static;
+    cursor: pointer;
+    border:2px solid #69c9b9;
+    border-radius: 10%;
+    color: whitesmoke;
+    background-color: #69c9b9;
+    margin : 0 0 0 350px;
+    font-size: 14px;
+    font-family: "Merriweather Sans", sans-serif;
+    z-index:1;
+}
+
+button.deleteButton {
+    position: static;
+    cursor: pointer;
+    border:2px solid #69c9b9;
+    border-radius: 10%;
+    color: whitesmoke;
+    background-color: #69c9b9;
+    margin: 2px 1px 2px -3px ;
+    font-size: 14px;
+    font-family: "Merriweather Sans", sans-serif;
+    z-index:1;
+}
+
+div.workListView {
+    position: static;
+    margin: 7px 0 1px 0;
+    background-color: #69c9b9;
+    border-radius: 5px;
+    width:450px;
+}
+
+div.workList {
+    position:absolute;
+    color: #2e2e2e;
+    font-size: 15px;
+    font-family: 'Noto Sans KR', sans-serif;
+    line-height: 26px;
+    border: none;
+    margin-left:30px;
+}
+
+div.EditForm {
+    position: static;
+    display: block;
+    text-align: center;
+    background-color: #000000;
+    color:whitesmoke;
+    opacity: 0.8;
+    padding: 20px;
+    border-radius: 10px;
+    width:350px;
+    height: 120px;
+  }
+  
+  label.editTime {
+    display: block;
+    position : static;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin:7px;
+  }
+  
+  label.editWork {
+    display: block;
+    position : static;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin:7px;
+  }
+  
+  button.editUpdateButton {
+    display: block;
+    position : static;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-top: 20px;
+    margin-left:50%;
+    transform: translate(-50%);
+    cursor: pointer;
+  }
+
+  

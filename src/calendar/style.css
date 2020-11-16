@@ -26,8 +26,9 @@
 
 .calendar .day div.selected {
   background-color: #de2323;
-  color: white;
+  color: whitesmoke;
   font-weight: bold;
+  border-radius: 10%;
 }
 
 .calendar .day:hover {

@@ -1,47 +1,38 @@
 import React from "react";
-import moment from "moment";
 
-export default function Header({value, setValue}) {
-
-    function monthName() {
-        return value.format("MMMM")
-    }
-    
-    function YearName() {
-        return value.format("YYYY")
-    }
-    
+export default function Header({selectedDate, setMonth}) {
     function preMonth() {
-        return value.clone().subtract(1, "month")
+        return selectedDate.clone().subtract(1, "month")
     }
     
     function nextMonth() {
-        return value.clone().add(1, "month")
+        console.log("nextMonth : " + selectedDate.clone().add(1, "month").format(""));
+        return selectedDate.clone().add(1, "month").startOf("day")
     }
     
     function nonePrevious() {
-        return value.isSame(moment("20200101"), "month");
+        return selectedDate.isSame("20200101", "month");
     }
 
     function noneNext() {
-        return value.isSame(moment("20201201"), "month");
+        return selectedDate.isSame("20201201", "month");
     }
 
     return (
     <div className="header">
         <div className="prevPagination"
-            onClick={() => !nonePrevious() && setValue(preMonth())}
+            onClick={() => !nonePrevious() && setMonth(preMonth().startOf("month"))}
         >❮</div>
 
         <div className="headerName">
-            {monthName()} <span>&emsp;</span> {YearName()}
+            {selectedDate.format("MMMM")}
+            <span>&emsp;</span>
+            {selectedDate.format("YYYY")}
         </div>
 
         <div className="nextPagination"
-            onClick={() => !noneNext() && setValue(nextMonth())}
-            
+            onClick={() => !noneNext() && setMonth(nextMonth().startOf("month"))}
         >❯</div>
-        
     </div>
     );
 }
