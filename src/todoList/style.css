@@ -3,7 +3,7 @@ div.weekHead {
   display: inline-block;
   left: 77.5%;
   transform: translate(-50%);
-  margin-top: 10vh;
+  margin-top: 80px;
   color: #199c81;
   font-size: 80px;
   font-weight: bold;
@@ -16,7 +16,7 @@ div.dateHead {
   display: inline-block;
   left: 77.5%;
   transform: translate(-50%);
-  top: 20vh;
+  top: 160px;
   color: #69c9b9;
   font-size: 170px;
   font-weight: bold;
@@ -35,7 +35,7 @@ div.dateHead {
 .addButton {
   position: absolute;
   display: inline-block;
-  top: 45vh;
+  top: 380px;
   left: 18vw;
   transform: translate(-50%);
   font-family: "Merriweather Sans", sans-serif;
@@ -52,7 +52,7 @@ div.dateHead {
 .clearAllButton {
   position: absolute;
   display: inline-block;
-  top: 45vh;
+  top: 380px;
   left: 27vw;
   transform: translate(-50%);
   font-family: "Merriweather Sans", sans-serif;
@@ -116,8 +116,7 @@ button.addUpdateButton {
 div.todoDate {
   display: block;
   position: absolute;
-  top : 55vh;
+  top : 470px;
   left: 77.5%;
   transform: translate(-50%);
 }
-

@@ -4,6 +4,7 @@ import { v1 as uuid } from "uuid";
 import { useDispatch } from "react-redux";
 import { todos } from "../redux/states";
 import Popup from "reactjs-popup";
+import TimeField from 'react-simple-timefield';
 import "./style.css"
 
 function TodoInput({selectedDate}) {
@@ -31,8 +32,8 @@ function TodoInput({selectedDate}) {
                 className="inputTime"
                 > time :
                 <span>&nbsp;</span>
-                <input
-                    type="time"
+                <TimeField
+                    value={time}
                     onChange={(e)=>setTime(e.target.value)}
                     value={time || ''}/>
                 </label>

@@ -1,45 +1,47 @@
 button.editButton {
-    position: static;
+    position: absolute;
     cursor: pointer;
-    border:2px solid #69c9b9;
-    border-radius: 10%;
+    border:3px solid #69c9b9;
     color: whitesmoke;
     background-color: #69c9b9;
-    margin : 0 0 0 350px;
-    font-size: 14px;
-    font-family: "Merriweather Sans", sans-serif;
-    z-index:1;
+    margin : 20px 0 0 -55px;
 }
 
 button.deleteButton {
-    position: static;
+    position: absolute;
     cursor: pointer;
     border:2px solid #69c9b9;
-    border-radius: 10%;
     color: whitesmoke;
     background-color: #69c9b9;
-    margin: 2px 1px 2px -3px ;
-    font-size: 14px;
-    font-family: "Merriweather Sans", sans-serif;
-    z-index:1;
+    margin : 20px 0 0 -35px;
 }
 
-div.workListView {
+div.ListView {
     position: static;
+    display:inline-block;
     margin: 7px 0 1px 0;
-    background-color: #69c9b9;
+    padding: 10px;
+    width: 430px;
+    font-size: 15px;
+    font-family: 'Noto Sans KR', sans-serif;
+    text-align: left;
+    word-break:break-all;
+    line-height: 26px;
+    border: none;
     border-radius: 5px;
-    width:450px;
+    background-color: #69c9b9;
+    color: #2e2e2e;
+    z-index: -1;
 }
 
 div.workList {
-    position:absolute;
-    color: #2e2e2e;
-    font-size: 15px;
-    font-family: 'Noto Sans KR', sans-serif;
-    line-height: 26px;
-    border: none;
-    margin-left:30px;
+  position: static;
+  display: inline-block;
+  padding:0 60px 0 60px;
+}
+
+div.timeList {
+  position: absolute;
 }
 
 div.EditForm {
@@ -78,5 +80,3 @@ div.EditForm {
     transform: translate(-50%);
     cursor: pointer;
   }
-
-  

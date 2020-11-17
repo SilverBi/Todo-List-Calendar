@@ -11,17 +11,19 @@ export function addTodo(todo) {
     }
 }
 
-export function deleteTodo(todoId) {
+export function deleteTodo(todoId, selectedDate) {
     return {
         type: DELETE_TODO,
         payload: todoId,
+        selectedDate: selectedDate,
     }
 }
 
-export function updateTodo(todo) {
+export function updateTodo(todo, selectedDate) {
     return {
         type: UPDATE_TODO,
         payload: todo,
+        selectedDate: selectedDate,
     }
 }
 

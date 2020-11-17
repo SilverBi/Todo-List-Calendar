@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import * as actions from "../redux/actions";
 import Popup from "reactjs-popup";
+import TimeField from 'react-simple-timefield';
 import "./todoDate.css";
 import deleteImage from "../images/delete_image.png";
 import editImage from "../images/edit_image.png";
@@ -14,10 +15,13 @@ function TodoDate({ todo , selectedDate }) {
     if (todo.date === selectedDate.format("YYYYMMDD")) {
         return (
         <div className="workListView">
-            <div className="workList">
-                {todo.time}
-                <span>&emsp;&emsp;&emsp;&emsp;</span
-                >{todo.work}
+            <div className="ListView">
+                <div className="timeList">
+                    {todo.time}
+                </div>
+                <div className="workList">
+                    {todo.work}
+                </div>
             </div>
 
             <Popup
@@ -38,8 +42,8 @@ function TodoDate({ todo , selectedDate }) {
                 <label className="editTime"
                 >time : 
                 <span>&nbsp;</span>
-                <input type="time"
-                value={time}
+                <TimeField
+                    value={time || ""}
                 onChange={(e) => setTime(e.target.value)}/>
                 </label>
 
@@ -47,7 +51,7 @@ function TodoDate({ todo , selectedDate }) {
                 >work : 
                 <span>&nbsp;</span>
                 <input type="text"
-                value={work}
+                value={work || ""}
                 onChange={(e) => setName(e.target.value)}/>
                 </label>
 
@@ -59,7 +63,8 @@ function TodoDate({ todo , selectedDate }) {
                                 ...todo,
                                 work: work,
                                 time: time,
-                            }
+                                date: selectedDate.format("YYYYMMDD"),
+                            }, selectedDate
                         ));
                     }}
                 >Update</button>
@@ -75,7 +80,7 @@ function TodoDate({ todo , selectedDate }) {
                 height: "20px",
                 width: "20px",
             }}
-                onClick={()=>dispatch(actions.deleteTodo(todo.id))}
+                onClick={()=>dispatch(actions.deleteTodo(todo.id, selectedDate))}
             ></button>
         </div>
         );

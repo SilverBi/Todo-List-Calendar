@@ -1,19 +1,22 @@
 #root {
   border-style: none;
   cursor: default;
+  height:100%;
 }
 
 body {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
 }
 
 #grid {
+  position: absolute;
   display: grid;
   grid-template-columns: 55vw 45vw;
-  grid-template-rows: 100vh;
+  grid-template-rows: auto fill;
   margin: 0 auto;
   border-style: none;
+  height: 100%;
 }
 
 .leftSide {
@@ -52,12 +55,9 @@ body {
   }
 }
 
-@media only screen and (max-height: 720px) {
-  div.rightSide {
-    display:none;
-  }
 
-  #grid {
-    grid-template-columns: 100vw 0vw;
+@media only screen and (max-height: 720px) {
+  div.workList {
+    display:none;
   }
 }
