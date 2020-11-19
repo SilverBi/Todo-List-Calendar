@@ -7,7 +7,7 @@ export const IS_START = "IS_START";
 export function addTodo(todo) {
     return {
         type: ADD_TODO,
-        payload: todo,
+        payload: todo
     }
 }
 

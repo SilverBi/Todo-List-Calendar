@@ -3,9 +3,9 @@ import { todos } from "./states"
 
 export let reducer = (state = todos, action) => {
     let newTodos = [...state];
-
+    
     switch (action.type) {
-        case ADD_TODO:
+            case ADD_TODO:
             newTodos.push(action.payload);
             return newTodos;
 
@@ -34,7 +34,7 @@ export let reducer = (state = todos, action) => {
         case IS_START:
             newTodos[0].start = action.payload;
             return newTodos;
-
+        
         default:
             return state;
     }

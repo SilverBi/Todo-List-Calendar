@@ -28,6 +28,7 @@ export default function Index({ selectedDate, onChangeDate }) {
                     ))}
             </div>
 
+            <div className="calendarBox">
             {calendar.map((week) => (
             <div>
                 {week.map((day) => (
@@ -39,6 +40,7 @@ export default function Index({ selectedDate, onChangeDate }) {
                     {day.format("D").toString()}</div>
                 </div>))}
             </div>))}
+            </div>
         </div>
     </div>);
 

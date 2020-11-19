@@ -33,9 +33,10 @@ function TodoInput({selectedDate}) {
                 > time :
                 <span>&nbsp;</span>
                 <TimeField
-                    value={time}
-                    onChange={(e)=>setTime(e.target.value)}
-                    value={time || ''}/>
+                    value={time || ""}
+                    onChange={(e)=>{
+                    setTime(e.target.value)}}
+                />
                 </label>
 
                 <label
@@ -50,13 +51,16 @@ function TodoInput({selectedDate}) {
 
                 <button
                 className="addUpdateButton"
+                
                 onClick={() => {
+                    if (time === undefined || time === "") time="00:00"
+                    if (work === undefined || work === "") work="Nothing to do"
                     dispatch(addTodo({
                             id: uuid(),
                             time: time,
                             work: work,
                             date: selectedDate.format("YYYYMMDD"),
-                            }));
+                        }));
                     setWork('');
                     setTime('');
                 }}

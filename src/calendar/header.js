@@ -6,7 +6,6 @@ export default function Header({selectedDate, setMonth}) {
     }
     
     function nextMonth() {
-        console.log("nextMonth : " + selectedDate.clone().add(1, "month").format(""));
         return selectedDate.clone().add(1, "month").startOf("day")
     }
     

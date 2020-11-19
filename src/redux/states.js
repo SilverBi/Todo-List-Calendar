@@ -1,3 +1,3 @@
-export let todos = [{
-    start:true
-}]
+export let todos = [
+    {start:true},
+]
